@@ -78,7 +78,7 @@ def check_dataset():
         return True
     else:
         print(f"  ✗ HAM10000_metadata.csv NOT FOUND")
-        print(f"     Please download from: https://challenge.isic-archive.com/data/")
+        print(f"     Please download from: https://www.kaggle.com/datasets/kiaskhoshdast/ham10000-metadatacsv")
         print(f"     Place in: {os.path.abspath(dataset_path)}")
         return False
 
