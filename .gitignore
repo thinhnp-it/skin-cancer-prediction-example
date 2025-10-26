@@ -16,16 +16,14 @@ __pycache__/
 *.ipynb_checkpoints
 
 # Data files
-*.csv
-*.xlsx
-*.pkl
-*.h5
-*.hdf5
+data/*.csv
+data/*.xlsx
+data/*.pkl
+data/*.h5
+data/*.hdf5
 data/*.jpg
 data/raw/*
 !data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
 
 # Models (exclude all large model files)
 models/**/*.pkl
@@ -38,12 +36,12 @@ models/**/*.joblib
 !models/*/.gitkeep
 
 # Results (keep CSV and small images, exclude large files)
-results/**/*.png
-results/**/*.jpg
-results/**/*.jpeg
+results/v1
+results/v2
+results/hog
 !results/.gitkeep
 !results/*/.gitkeep
-
+!results/comparison
 
 # IDEs
 .vscode/
@@ -64,3 +62,5 @@ logs/
 *.pdf
 data/HAM10000_images_part_1/*
 data/HAM10000_images_part_2/*
+*.code-workspace
+
