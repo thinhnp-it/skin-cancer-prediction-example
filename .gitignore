@@ -34,6 +34,8 @@ models/**/*.keras
 models/**/*.joblib
 !models/.gitkeep
 !models/*/.gitkeep
+!models/pca/*
+!models/hog/*
 
 # Results (keep CSV and small images, exclude large files)
 results/v1
