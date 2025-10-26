@@ -27,15 +27,22 @@ data/raw/*
 data/processed/*
 !data/processed/.gitkeep
 
-# Models
-models/*.pkl
-models/*.h5
-models/*.pt
+# Models (exclude all large model files)
+models/**/*.pkl
+models/**/*.h5
+models/**/*.pt
+models/**/*.pth
+models/**/*.keras
+models/**/*.joblib
 !models/.gitkeep
+!models/*/.gitkeep
 
-# Results
+# Results (keep CSV and small images, exclude large files)
+results/**/*.png
+results/**/*.jpg
+results/**/*.jpeg
 !results/.gitkeep
-!results/*.csv
+!results/*/.gitkeep
 
 
 # IDEs
